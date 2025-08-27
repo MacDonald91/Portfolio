@@ -27,7 +27,7 @@ This site brings together my most technical projects with **live demos** and lin
 ---
 
 ## 📸 Screenshots
-(Add screenshots of your homepage and projects page here if you’d like)  
+
 
 ---
 
