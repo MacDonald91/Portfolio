@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Alasdair – Full-Stack Developer" />
+  <title>Alasdair | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Alasdair</div>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <img src="images/githubpic1.jpg" alt="Portrait of Alasdair" class="hero-img" />
+      <div class="hero-text">
+        <h1>Hello, I'm Alasdair</h1>
+        <p>I'm a passionate full-stack developer focused on building modern, responsive, and accessible web applications.</p>
+        <a href="projects.html" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3>C# Fundamentals</h3>
+          <p>Code samples and exercises from learning C# and .NET — OOP, collections, LINQ, and algorithmic practice.</p>
+          <a href="https://github.com/MacDonald91/Csharp-Fundamentals" target="_blank">GitHub Repo</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Tech Website</h3>
+          <p>Responsive template for a tech brand — modular services, clean UI and mobile-first layout.</p>
+          <a href="https://github.com/MacDonald91/Tech-Website" target="_blank">GitHub Repo</a> |
+          <a href="https://macdonald91.github.io/Tech-Website/" target="_blank">Live Demo</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Cloud Innovation</h3>
+          <p>Landing page focused on cloud services — accessibility, responsive layout, keyboard navigation support.</p>
+          <a href="https://github.com/MacDonald91/Cloud-Innovation" target="_blank">GitHub Repo</a> |
+          <a href="https://macdonald91.github.io/Cloud-Innovation/" target="_blank">Live Demo</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>The site you're currently viewing. Semantic HTML, modular CSS, and JavaScript interactivity.</p>
+          <a href="https://github.com/MacDonald91/MacDonald91" target="_blank">GitHub Repo</a> |
+          <a href="https://macdonald91.github.io/MacDonald91/" target="_blank">Live Demo</a>
+        </article>
+
+      </div>
+
+      <div class="projects-cta">
+        <a href="projects.html" class="btn">See All Projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate and fast-learning software developer with a strong foundation in full-stack web development, gained through Codecademy's intensive Full-Stack Engineer career path. I've also completed the AWS re/Start program and currently study software development through IT Career Switch.
+      </p>
+      <ul>
+        <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript (ES6+), React.js, Accessibility (a11y), Flexbox, Grid, DOM Manipulation</li>
+        <li><strong>Back-End:</strong> Node.js, Express.js, REST APIs, HTTP/CRUD, C#, .NET</li>
+        <li><strong>Databases:</strong> PostgreSQL, SQL, Sequelize</li>
+        <li><strong>Tools & DevOps:</strong> Git, GitHub, Command Line, Jest, GitHub Pages, Netlify</li>
+        <li><strong>Cloud & Scripting:</strong> AWS, Bash, Linux, Python</li>
+      </ul>
+      <p>
+        I combine technical knowledge with real-world experience in client communication, service delivery, and team coordination — developed in roles at Lloyd’s Register, Hastings Direct, and in management.
+      </p>
+      <p>
+        <strong>Certifications & Training:</strong><br />
+        • Full-Stack Web Development (Codecademy)<br />
+        • AWS re/Start Cloud Practitioner<br />
+        • Software Development (IT Career Switch)<br />
+        • Google Digital Marketing Certificate
+      </p>
+      <p>
+        <strong>Connect:</strong><br />
+        <a href="https://github.com/MacDonald91" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/alasdair-macdonald-60b178326/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Alasdair 2025</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const status = document.getElementById('form-status');
+      status.textContent = 'Sending...';
+
+      setTimeout(() => {
+        status.textContent = 'Thanks! Your message has been sent.';
+        this.reset();
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
